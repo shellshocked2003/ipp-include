@@ -7,8 +7,8 @@ class mklDynamic(ConanFile):
     url = "https://github.com/shellshocked2003/ipp-include"
     homepage = "https://anaconda.org/anaconda/ipp-include"
     author = "Michael Gardner <mhgardner@berkeley.edu>"
-    license = "Intel Simplified Software License"   
-    settings = "os", "compiler", "build_type", "arch"
+    license = "Intel Simplified Software License"
+    settings = {"os": None, "compiler": None, "build_type": None, "arch": ["x86_64"]}
     description = "Intel Integrated Performance Primitives Header files"
     no_copy_source = True
     build_policy = "missing"
